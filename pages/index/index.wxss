@@ -1,0 +1,17 @@
+.wrap-myslider{
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.box-text{
+  display: flex;
+  padding: 0 20px 0 25px;
+  margin-bottom: 35px;
+  justify-content: space-between;
+}
+.box-text view{
+  width: 22px;
+  font-size: 11px;
+  text-align: center;
+  color: #000000;
+  /* font-weight: lighter; */
+}

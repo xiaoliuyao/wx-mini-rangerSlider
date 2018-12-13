@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "自定义区间组件",
+  "usingComponents": {
+    "rSlider": "/components/rangerSlider/rangerSlider"
+  }
+}
