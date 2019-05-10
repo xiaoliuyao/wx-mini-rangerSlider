@@ -1,20 +1,24 @@
 <!--自定义区间滑块-->
 
 <view class='slidedata'>
-  <view class='slidedata-name'>{{name}}</view>
+  <view class='slidedata-name'>{{title}}</view>
   <view class='slidedata-unit'>{{unit?'（'+unit+'）':''}}</view>
   <view class='slidedata-data'>{{notice}}</view>
 </view>
 
-<view class='slidebox' style="height:{{blocksize}}px;">
-  <view class='box-greyline' style="top:{{(blocksize-2)/2}}px;"></view>
-  <view class='box-blueline' style="top:{{(blocksize-2)/2}}px; margin-left:{{offset1}}px; margin-right:{{ww-65-offset2}}px;"></view>
+<view class='slidebox' style="height:{{blocksize}}px;margin-left:{{marginLeft}}px;margin-right:{{marginRight}}px;">
+  <view class='range-line' style="top:{{(blocksize-2)/2}}px;"></view>
+  <view class='value-line' style="top:{{(blocksize-2)/2}}px; margin-left:{{offset1}}px; margin-right:{{ww-marginLeft-marginRight-offset2}}px;"></view>
 
-  <view class='slidebar' catchtouchmove="lmove" catchtouchend="lend" style="width:{{blocksize}}px; height: {{blocksize}}px; left: {{offset1-blocksize/2}}px">
+  <view class='slide-block' catchtouchmove="lmove" catchtouchend="lend" style="width:{{blocksize}}px; height: {{blocksize}}px; left: {{offset1-blocksize/2}}px">
     <image src='/images/slide_imge.png' class='slide-img'></image>
   </view>
-
-  <view class='slidebar' catchtouchmove="rmove" catchtouchend="rend" style="width:{{blocksize}}px; height: {{blocksize}}px; left:{{offset2-blocksize/2}}px">
+  <view class='slide-block' catchtouchmove="rmove" catchtouchend="rend" style="width:{{blocksize}}px; height: {{blocksize}}px; left:{{offset2-blocksize/2}}px">
     <image src='/images/slide_imge.png' class='slide-img'></image>
   </view>
+</view>
+
+
+<view class='slidetext' style="padding:10px {{marginRight-blocksize/2}}px 0 {{marginLeft-blocksize/2}}px;">
+  <view wx:for="{{keyTextArray}}" wx:key="" style="width:{{blocksize}}px;font-size:{{blocksize/2}}px;">{{item}}</view>
 </view>

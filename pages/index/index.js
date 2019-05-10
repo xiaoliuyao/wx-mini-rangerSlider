@@ -1,16 +1,17 @@
 // pages/index/index.js
 
-var ww = wx.getSystemInfoSync().windowWidth;
-
 Page({
 
   data: {
-    ww: ww, //窗口宽度
 
     minPrice: 0,
-    maxPrice: 50,
-    minMileage: 0,
-    maxMileage: 10,
+    maxPrice: 30,
+    
+    minMileage: 2,
+    maxMileage: 6,
+
+    minPercent:-3,
+    maxPercent:6
 
   },
 
@@ -34,6 +35,14 @@ Page({
   changeMaxMileage: function (e) {
     console.log('maxMileage:'+ e.detail.max);
   },
+
+  changeMinPercent: function (e) {
+    console.log('minPercent:' + e.detail.min);
+  },
+
+  changeMaxPercent: function (e) {
+    console.log('maxPercent:' + e.detail.max);
+  }
 
  
 })

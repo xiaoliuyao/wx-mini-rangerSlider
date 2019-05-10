@@ -1,30 +1,13 @@
 <!--pages/index/index.wxml-->
 
+<view class='wrap-myslider'>
+  <rSlider key-arr="{{[0,10,20,30]}}" blocksize="26" title="车价" unit="万" maxIsInfinite="true" minCurrent="{{minPrice}}" maxCurrent="{{maxPrice}}" bindchangemin="changeMinPrice" bindchangemax="changeMaxPrice"></rSlider>
+</view>
 
 <view class='wrap-myslider'>
-  <rSlider ww="{{ww}}" step="0.5" blocksize="22" min="0" max="50" name="车价" name2="价格" unit="万" minCurrent="{{minPrice}}" maxCurrent="{{maxPrice}}" bindchangemin="changeMinPrice" bindchangemax="changeMaxPrice"></rSlider>
+  <rSlider key-arr="{{[0,2,4,6,8,10]}}" blocksize="22" title="里程" unit="万公里" marginLeft="60" marginRight="42" magnet="true" minCurrent="{{minMileage}}" maxCurrent="{{maxMileage}}" bindchangemin="changeMinMileage" bindchangemax="changeMaxMileage"></rSlider>
 </view>
-
-<view class='box-text'>
-  <view>0</view>
-  <view>10</view>
-  <view>20</view>
-  <view>30</view>
-  <view>40</view>
-  <view>不限</view>
-</view>
-
-
 
 <view class='wrap-myslider'>
-  <rSlider ww="{{ww}}" step="1" blocksize="22" min="0" max="10" name="里程" name2="里程" unit="万公里" magnet="true" minCurrent="{{minMileage}}" maxCurrent="{{maxMileage}}" bindchangemin="changeMinMileage" bindchangemax="changeMaxMileage"></rSlider>
-</view>
-
-<view class='box-text'>
-  <view>0</view>
-  <view>2</view>
-  <view>4</view>
-  <view>6</view>
-  <view>8</view>
-  <view>不限</view>
+  <rSlider key-arr="{{[-10,-5,0,5,10]}}" blocksize="22" title="增长率" unit="%" magnet="true" minCurrent="{{minPercent}}" maxCurrent="{{maxPercent}}" bindchangemin="changeMinPercent" bindchangemax="changeMaxPercent"></rSlider>
 </view>
