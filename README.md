@@ -1,7 +1,7 @@
 # wx-mini-rangerSlider  
 根据业务需求所写的区间滑块组件。包含文字部分、滑块和刻度。适用于小程序。  
 ### 效果
-![组件图](http://pre7kddvq.bkt.clouddn.com/range_slide.png)  
+![组件图](http://pre7kddvq.bkt.clouddn.com/range_slide.gif)  
 ### 特点
 - 步长一律为1
 - 根据业务需要选择最右刻度文字是否为“不限”，如果滑动最大值到“不限”，就会返回空值
